@@ -7,5 +7,9 @@ openssl x509 -inform pem -in my.pem -outform der -out my.cer
 #convert pem to p12 (require private key to do)
 openssl pkcs12 -export -in my.pem -inkey myprivate.key -out my.p12 
 
+#convert pem to der
+openssl x509 -inform pem -in my.crt -outform der -out my.der
+
+
 
 
