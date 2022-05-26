@@ -1,1 +1,6 @@
+#to check the information such as expiration date,issuer and SAN etc..
+openssl x509 -in mycert.pem -text -noout
 
+#to verify that certificate and key are matched(compared with md5 value)
+openssl x509 -noout -modulus -in mycert.pem | openssl md5
+openssl rsa -noout -modulus -in mykey.key  | openssl md5
