@@ -1,1 +1,1 @@
-# check-verfiy-certificate-with-openssl
+To troubleshoot SSL/TLS certificate with openssl
