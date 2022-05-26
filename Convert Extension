@@ -1,3 +1,0 @@
-
-#convert pem to pfx 
-openssl pkcs12 -export -in my.crt -inkey ym.key -out my.pfx
